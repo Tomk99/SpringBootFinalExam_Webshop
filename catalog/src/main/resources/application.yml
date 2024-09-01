@@ -3,3 +3,34 @@ spring:
     name: catalog
   config:
     import: optional:configserver:http://localhost:8081
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cubix-webshop
+    username: postgres
+    password: nemmondommeg
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+
+
+##############FLYWAY-hez##############
+#    properties:
+#      jakarta:
+#        persistence:
+#          schema-generation:
+#            create-source: metadata
+#            scripts:
+#              action: create
+#              create-target: create.sql
+  ######################################
+
+  flyway:
+    baseline-on-migrate: true
+    url: jdbc:postgresql://localhost:5432/cubix-webshop
+    user: postgres
+    password: nemmondommeg
+    locations: classpath:db/migration
+server:
+  error:
+    include-message: always

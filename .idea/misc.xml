@@ -18,6 +18,8 @@
         <option value="$PROJECT_DIR$/order/pom.xml" />
         <option value="$PROJECT_DIR$/catalog/pom.xml" />
         <option value="$PROJECT_DIR$/user/pom.xml" />
+        <option value="$PROJECT_DIR$/user-api/pom.xml" />
+        <option value="$PROJECT_DIR$/catalog-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
